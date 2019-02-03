@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "routes": [{ "src": "/(.*)", "dest": "/src/$1" }],
+  "builds": [
+    {
+      "src": "src/*.js",
+      "use": "@now/node@0.4.28-canary.6"
+    },
+    {
+      "src": "src/*.css",
+      "use": "@now/static"
+    }
+  ]
+}
